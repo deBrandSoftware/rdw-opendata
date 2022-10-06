@@ -1,0 +1,22 @@
+{
+  "name": "debrand/rdw-opendata",
+  "description": "RDW Open data library",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Milan Mols",
+      "email": "milan@debrand.rocks"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "deBrand\\RDWOpenData\\": "src/RDWOpenData"
+    }
+  },
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ext-curl": "*",
+    "ext-json": "*"
+  }
+}
