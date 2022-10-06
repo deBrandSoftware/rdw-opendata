@@ -8,7 +8,7 @@ class Client {
 
 	const TIMEOUT = 10;
 	const CONNECTION_TIMEOUT = 0;
-	const URL = "https://opendata.rdw.nl/resource/{endpoint}.json?kenteken={kenteken}";
+	const URL = "https://opendata.rdw.nl/resource/{endpoint}.json?kenteken={license_plate}";
 
 	/**
 	 * Retrieves license plate data from opendata.rdw.nl
