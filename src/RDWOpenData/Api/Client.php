@@ -49,9 +49,9 @@ class Client {
 	 * @throws Exception
 	 */
 	protected static function getUrl(string $license_plate, string $endpoint): string {
-		if(!in_array($endpoint, Endpoints::ALL)) {
-			throw new Exception('Invalid endpoint given: ' . $endpoint);
-		}
+//		if(!in_array($endpoint, Endpoints::ALL)) {
+//			throw new Exception('Invalid endpoint given: ' . $endpoint);
+//		}
 		return str_replace(array('{license_plate}', '{endpoint}'), array($license_plate, $endpoint), self::URL);
 	}
 }
