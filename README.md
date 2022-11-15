@@ -6,7 +6,7 @@ This is a simple library for getting vehicle data by license plate number from h
 
 `composer config repositories.debrand vcs https://github.com/deBrandSoftware/rdw-opendata`
 
-`composer require debrand/rdw-opendata:dev-master`
+`composer require debrand/rdw-opendata`
 
 ## Example usage
 
