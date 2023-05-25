@@ -79,11 +79,18 @@ class RDW {
 					$value = null;
 					break;
 				case 'datum_eerste_toelating':
+				case 'datum_eerste_tenaamstelling_in_nederland':
 				case 'datum_eerste_afgifte_nederland':
 				case 'datum_tenaamstelling':
 				case 'vervaldatum_apk':
 				case 'vervaldatum_tachograaf':
-					$value = DateTime::createFromFormat('Ymd', $value);
+					$dt_key = $key . '_dt';
+					if(isset($output[$dt_key])) {
+						$value = DateTime::createFromFormat('Y-m-d\TH:i:s.u', $output[$dt_key]);
+					} else {
+						$value = DateTime::createFromFormat('Ymd', $value);
+						$value->setTime(0, 0, 0, 0);
+					}
 					break;
 				case 'api_gekentekende_voertuigen_assen':
 				case 'api_gekentekende_voertuigen_brandstof':
