@@ -3,6 +3,7 @@
   "description": "RDW Open data library",
   "minimum-stability": "stable",
   "license": "MIT",
+  "version": "1.0.0"
   "authors": [
     {
       "name": "Milan Mols",
