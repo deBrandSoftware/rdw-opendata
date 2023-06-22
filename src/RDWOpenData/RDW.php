@@ -55,9 +55,10 @@ class RDW {
 					$data['as_' . $output_as['as_nummer'] . '_' . $item] = $value;
 				}
 			}
-		} else {
-			$data = array_merge($data, $output[0]) ?? [];
+		} else if(isset($output[0]) && is_array($output[0])) {
+			$data = array_merge($data, $output[0]);
 		}
+
 		return $data;
 	}
 
