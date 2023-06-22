@@ -56,7 +56,7 @@ class RDW {
 				}
 			}
 		} else {
-			$data = array_merge($data, $output[0]);
+			$data = array_merge($data, $output[0]) ?? [];
 		}
 		return $data;
 	}
